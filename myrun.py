@@ -1,4 +1,6 @@
-import tensorflow as tf
+# import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior() 
 import cv2
 import os
 
@@ -16,7 +18,7 @@ from copy import deepcopy
 
 cam_id = 0
 cam_id="demo\\bicep_press.mp4"
-cam_id=r"demo\dumbbell_lateral_raises.mp4"
+cam_id="demo\dumbbell_lateral_raises.mp4"
 cam_id="demo\\my_squat.mp4"
 # cam_id=r"demo\push_up.mp4"
 cam_width = 360
